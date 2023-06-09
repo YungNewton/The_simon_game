@@ -7,3 +7,9 @@
 hr{
     color: white !important;
 }
+.navbar-bra{
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
