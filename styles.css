@@ -1,11 +1,21 @@
 .first{
     background-color: black;
+    height: 70vh;
+    
 }
 .navbar{
     background-color: black !important;
+    /* position: absolute; */
+    width: 100%;
+    
 }
-hr{
-    color: white !important;
+border{
+    opacity: 0.1;
+}
+hr {
+    width: 100%;
+    height: 2px;
+    background-color:white;
 }
 .navbar-bra{
     text-decoration: none;
