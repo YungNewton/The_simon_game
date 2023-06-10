@@ -16,7 +16,7 @@
 }
 .navbar-bra{
     text-decoration: none;
-    color: rgb(247, 236, 236);
+    color: #d8d6d6;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
 }
@@ -29,4 +29,11 @@
     width: 25%;
     border-top: 5px solid rgb(242, 241, 241);
     opacity: 1;
+}
+.description{
+    padding-left: 5vh;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: larger;
 }
