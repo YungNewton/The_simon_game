@@ -1,6 +1,6 @@
 body{
     background-color: black;
-    height: 200vh;
+    height: 150vh;
     
 }
 .navbar{
@@ -89,4 +89,22 @@ body{
 .second{
     float: right;
     padding-right: 200px;
+}
+.third{
+    text-align: center;
+    padding-top: 10vh;
+    margin-left: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.third button{
+    width: 250px;
+    border-radius: 25px;
+    height: 40px;
+}
+footer{
+    padding-top: 40px;
+}
+.dFooter{
+    text-decoration: none;
+    color: whitesmoke;
 }
