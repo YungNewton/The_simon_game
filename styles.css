@@ -1,11 +1,11 @@
 .first{
     background-color: black;
-    height: 70vh;
+    height: 100vh;
     
 }
 .navbar{
     background-color: black !important;
-    /* position: absolute; */
+    position: absolute;
     width: 100%;
     
 }
@@ -24,6 +24,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     margin-left: 40px;
+    padding-top: 16vh;
 }
 .h1_hr{
     width: 25%;
@@ -37,3 +38,8 @@
     font-weight: 100;
     font-size: larger;
 }
+.rules{
+    margin-left: 5vh;
+    border-radius: 20px;
+}
+
