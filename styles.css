@@ -120,28 +120,28 @@ footer{
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 .red{
     background-color: red;
     height: 150px;
     width: 150px;
     border-radius: 20px;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 .yellow{
     background-color: yellow;
     height: 150px;
     width: 150px;
     border-radius: 20px;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 .blue{
     background-color: blue  ;
     height: 150px;
     width: 150px;
     border-radius: 20px;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 .top{
     margin-top: 50px;
@@ -149,5 +149,5 @@ footer{
     margin-right: auto;
 }
 .top td{
-    padding: 5px;
+    padding: 7px;
 }
