@@ -108,3 +108,27 @@ footer{
     text-decoration: none;
     color: whitesmoke;
 }
+.heroe2{
+    font-family: 'Nova Cut', cursive;
+    margin-left:0px;
+    text-align: center;
+}
+.green{
+    background-color: #3e8e41;
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.red{
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+}
+.top{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
