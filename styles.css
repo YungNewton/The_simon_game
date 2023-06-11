@@ -127,6 +127,18 @@ footer{
     width: 150px;
     border-radius: 20px;
 }
+.yellow{
+    background-color: yellow;
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+}
+.blue{
+    background-color: blue  ;
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+}
 .top{
     margin-top: 50px;
     margin-left: auto;
