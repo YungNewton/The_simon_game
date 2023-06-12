@@ -7,7 +7,7 @@ $(document).keypress(function(){
             $(".heroe2 > h1").text("Level "+counter);
             var number = Math.floor(Math.random() * 4);
             number_array.push(number);
-            for(var i = 0; i < number_array.length(); i++){
+            for(var i = 0; i < number_array.length; i++){
                 switch(number_array[i]){
                     case 0:
                         var sound = new Audio('green.mp3');
