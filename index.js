@@ -10,24 +10,28 @@ $(document).keypress(function(){
             for(var i = 0; i < number_array.length; i++){
                 switch(number_array[i]){
                     case 0:
-                        var sound = new Audio('green.mp3');
-                        sound.play();
-                        $(".green").animate({opacity : 1}).delay(500).animate({opacity : 0.5})
+                        setTimeout(()=>{
+                            var sound = new Audio('green.mp3');
+                            sound.play();
+                            $(".green").animate({opacity : 1}).delay(500).animate({opacity : 0.5})}, 500);
                         break;
                     case 1:
-                        var audio = new Audio('red.mp3');
-                        audio.play();
-                        $(".red").animate({opacity : 1}).delay(500).animate({opacity : 0.5})
+                        setTimeout(()=>{
+                            var audio = new Audio('red.mp3');
+                            audio.play();
+                            $(".red").animate({opacity : 1}).delay(500).animate({opacity : 0.5})}, 500);
                         break;
                     case 2:
-                        var sound3 = new Audio('yellow.mp3');
-                        sound3.play();
-                        $(".yellow").animate({opacity : 1}).delay(500).animate({opacity : 0.5})
+                        setTimeout(()=>{
+                            var sound3 = new Audio('yellow.mp3');
+                            sound3.play();
+                            $(".yellow").animate({opacity : 1}).delay(500).animate({opacity : 0.5})}, 500);
                         break;
                     case 3:
-                        var sound4 = new Audio('blue.mp3');
-                        sound4.play();
-                        $(".blue").animate({opacity : 1}).delay(500).animate({opacity : 0.5})
+                        setTimeout(()=>{
+                            var sound4 = new Audio('blue.mp3');
+                            sound4.play();
+                            $(".blue").animate({opacity : 1}).delay(500).animate({opacity : 0.5})}, 500);
                         break;
                     default:
                         break;
