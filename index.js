@@ -3,11 +3,15 @@ $(document).keypress(function(){
     var number_array = [];
     var answer_array = [];
     var should_play = true;
-    var counter = 1;
     var sound = new Audio('green.mp3');
     var audio = new Audio('red.mp3');
     var sound3 = new Audio('yellow.mp3');
     var sound4 = new Audio('blue.mp3');
+    function startOver() {
+        number_array = [];
+        answer_array = [];
+        should_play = true;
+    }
     if(should_play == true) {
         setTimeout(function timer() {
             var number = Math.floor(Math.random() * 4);
@@ -33,43 +37,15 @@ $(document).keypress(function(){
                 default:
                     break;
                 }
-        }, counter * 500);
-        counter++
+        }, 500);
         should_play = false;
-    }
-    for(let e = 0; e < number_array.length; e++){
-        $(".top td").click(function(event){
-            var text = $(event.target).attr('class');
-            switch(text){
-                case "green":
-                    sound.play();
-                    answer_array.push(0);
-                    break;
-                case "red":
-                    $(".red").animate({opacity : 0}).delay(10).animate({opacity : 1})
-                    audio.play();
-                    answer_array.push(1);
-                    break;
-                case "yellow":
-                    $(".yellow").animate({opacity : 0}).delay(10).animate({opacity : 1})
-                    sound3.play();
-                    answer_array.push(2);
-                    break;
-                case "blue":
-                    $(".blue").animate({opacity : 0}).delay(10).animate({opacity : 1})
-                    sound4.play();
-                    answer_array.push(3);
-                    break;
-                default:
-                    answer_array.push(4);
-                    break;
-            }
-        })
     }
     $(".top td").click(function(event){
         var text = $(event.target).attr('class');
         switch(text){
             case "green":
+                $(".green").animate({opacity : 0}).delay(10).animate({opacity : 1})
+                audio.play();
                 sound.play();
                 answer_array.push(0);
                 break;
@@ -102,6 +78,7 @@ $(document).keypress(function(){
             var loose = new Audio('wrong.mp3');
             $(".heroe2 > h1").html("<h1> Game Over!!! <br/> Press any key to restart. </h1>");
             loose.play();
+            startOver();
         }
     })
 
