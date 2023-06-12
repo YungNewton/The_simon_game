@@ -3,6 +3,9 @@ body{
     height: 140vh;
     
 }
+.over {
+    background-color: white;
+}
 .navbar{
     background-color: black !important;
     position: fixed;
