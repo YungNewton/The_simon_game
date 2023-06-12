@@ -3,10 +3,11 @@ $(document).keypress(function(){
     var number_array = [];
     let counter = 1;
     var should_continue = true;
-        while(should_continue){
-            $(".heroe2 > h1").text("Level "+counter);
+    setTimeout(()=>{
+        while(counter < 4){
             var number = Math.floor(Math.random() * 4);
             number_array.push(number);
+            $(".heroe2 > h1").text("Level "+number_array.length);
             for(var i = 0; i < number_array.length; i++){
                 switch(number_array[i]){
                     case 0:
@@ -41,4 +42,5 @@ $(document).keypress(function(){
             counter++;
     
         }
+    }, 500);
 })
