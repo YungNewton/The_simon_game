@@ -58,7 +58,7 @@ $(document).keypress(function(){
                 
             }else{
                 var loose = new Audio('wrong.mp3');
-                $(".heroe2 > h1").html("Game Over !!!!\npress any key to restart");
+                $(".heroe2 > h1").html("<h1> Game Over!!! <br/> Press any key to restart. </h1>");
                 loose.play();
             }
         })
