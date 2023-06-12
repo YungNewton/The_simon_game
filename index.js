@@ -7,41 +7,31 @@ $(document).keypress(function(){
             var number = Math.floor(Math.random() * 4);
             number_array.push(number);
             $(".heroe2 > h1").text("Level " + number_array.length);
-            for(var i = 0; i < number_array.length; i++){
-                switch(number_array[i]){
-                    case 0:
-                        setTimeout(()=>{
-                            var sound = new Audio('green.mp3');
-                            $(".green").animate({opacity : 1}).delay(300).animate({opacity : 0.5})
-                            sound.play();
-                        },i * 1500);
-                        break;
-                    case 1:
-                        setTimeout(()=>{
-                            var audio = new Audio('red.mp3');
-                            $(".red").animate({opacity : 1}).delay(300).animate({opacity : 0.5})
-                            audio.play();
-                        },i * 1500);
-                        break;
-                    case 2:
-                        setTimeout(()=>{
-                            var sound3 = new Audio('yellow.mp3');
-                            $(".yellow").animate({opacity : 1}).delay(300).animate({opacity : 0.5})
-                            sound3.play();
-                        },i * 1500);
-                        break;
-                    case 3:
-                        setTimeout(()=>{
-                            var sound4 = new Audio('blue.mp3');
-                            $(".blue").animate({opacity : 1}).delay(300).animate({opacity : 0.5})
-                            sound4.play();
-                        },i * 1000);
-                        break;
-                    default:
-                        break;
+            switch(number){
+                case 0:
+                    var sound = new Audio('green.mp3');
+                    $(".green").animate({opacity : 0}).delay(10).animate({opacity : 1})
+                    sound.play();
+                    break;
+                case 1:
+                    var audio = new Audio('red.mp3');
+                    $(".red").animate({opacity : 0}).delay(10).animate({opacity : 1})
+                    audio.play();
+                    break;
+                case 2:
+                    var sound3 = new Audio('yellow.mp3');
+                    $(".yellow").animate({opacity : 0}).delay(10).animate({opacity : 1})
+                    sound3.play();
+                    break;
+                case 3:
+                    var sound4 = new Audio('blue.mp3');
+                    $(".blue").animate({opacity : 0}).delay(10).animate({opacity : 1})
+                    sound4.play();
+                    break;
+                default:
+                    break;
                 }
-            }
-        }, counter * 1000);
+        }, counter * 1500);
     }
 
 })
