@@ -1,8 +1,10 @@
 
 $(document).keypress(function(){
     var number_array = [];
-
-    for (let counter = 1; counter < 3; counter++) {
+    var answer_array = [];
+    var should_play = true;
+    var counter = 1;
+    while (counter < 5) {
         setTimeout(function timer() {
             var number = Math.floor(Math.random() * 4);
             number_array.push(number);
@@ -32,6 +34,34 @@ $(document).keypress(function(){
                     break;
                 }
         }, counter * 1500);
+        counter++
+        $(".top td").click(function(event){
+            var text = $(event.target).attr('class');
+            switch(text){
+                case 0:
+                    answer_array.push(0);
+                    break;
+                case 1:
+                    answer_array.push(1);
+                    break;
+                case 2:
+                    answer_array.push(2);
+                    break;
+                case 3:
+                    answer_array.push(3);
+                    break;
+                default:
+                    answer_array.push(4);
+                    break;
+            }
+            if(JSON.stringify(answer_array) === JSON.stringify(number_array) ){
+                
+            }else{
+                var loose = new Audio('wrong.mp3');
+                $(".heroe2 > h1").html("Game Over !!!!\npress any key to restart");
+                loose.play();
+            }
+        })
     }
 
 })
