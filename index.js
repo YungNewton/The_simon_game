@@ -71,4 +71,20 @@ $(".top td").click(function(event){
             answer_array.push(4);
             break;
     }
+    check();
 })
+
+function check(){
+    if(JSON.stringify(answer_array) === JSON.stringify(number_array) ){
+        next();
+    }else{
+        $("body").css("background-color", "grey");
+        setTimeout(function () {
+            $("body").css("background-color", "black");
+        }, 100);
+        var loose = new Audio('wrong.mp3');
+        $(".heroe2 > h1").html("<h1> Game Over!!! <br/> Press any key to restart. </h1>");
+        loose.play();
+        startOver();
+    }
+}
