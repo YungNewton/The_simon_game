@@ -18,6 +18,7 @@ function startOver() {
     should_play = true;
 }
 function next(){
+    answer_array = [];
     setTimeout(function timer() {
         var number = Math.floor(Math.random() * 4);
         number_array.push(number);
@@ -74,9 +75,12 @@ $(".top td").click(function(event){
     check();
 })
 
+
 function check(){
-    if(JSON.stringify(answer_array) === JSON.stringify(number_array) ){
-        next();
+    if(answer_array[(answer_array.length - 1)] === number_array[(answer_array.length - 1)]){
+        if(answer_array.length == number_array.length){
+            next();
+        }
     }else{
         $("body").css("background-color", "grey");
         setTimeout(function () {
